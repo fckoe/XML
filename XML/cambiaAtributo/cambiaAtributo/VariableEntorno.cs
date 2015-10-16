@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace cambiaAtributo
 {
-    class VariableEntorno
+   public  class VariableEntorno
     {
         string variableName;
         string variableValue;
@@ -37,6 +37,16 @@ namespace cambiaAtributo
         public string getVariableValue()
         {
             return this.variableValue;
+        }
+
+        public Boolean existeVariable( string variableName) {
+            if (Environment.GetEnvironmentVariable(variableName) == null)
+            {
+                return false;
+            }
+            else {
+                return true;
+            }
         }
     }
 }
