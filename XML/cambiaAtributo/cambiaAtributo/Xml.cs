@@ -8,9 +8,9 @@ namespace cambiaAtributo
 {
     class Xml
     {
-        string variableName;
-        string variableValue;
 
+        string rutaXml;
+        string nombreAtributo;
         /*
          * CONSTRUCTOR 
          */
@@ -20,26 +20,26 @@ namespace cambiaAtributo
 
 
         /*
-         *  GETTER AND SETTER
+         * GETTER AND SETTER
          */
-        public void setVariableName(string variableName)
-        {
-            this.variableName = variableName;
+        public string getRutaXml() {
+            return this.rutaXml;
+        }
+        public string getNombreAtributo() {
+            return this.nombreAtributo;
         }
 
-        public void setVariableValue(string variableValue)
-        {
-            this.variableValue = variableValue;
+        public void setRutaXml(string rutaXml) {
+            this.rutaXml = rutaXml;
         }
 
-        public string getVariableName()
-        {
-            return this.variableName;
+        public void setNombreAtributo(string nombreAtributo) {
+            this.nombreAtributo = nombreAtributo;
         }
 
-        public string getVariableValue()
-        {
-            return this.variableValue;
-        }
+
+
+
+   
     }
 }

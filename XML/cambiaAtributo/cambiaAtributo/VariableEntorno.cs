@@ -12,6 +12,11 @@ namespace cambiaAtributo
         string variableValue;
 
         /*
+         * CONTRUCTOR
+         */
+        public VariableEntorno() { }
+
+        /*
             *  GETTER AND SETTER
             */
         public void setVariableName(string variableName)
