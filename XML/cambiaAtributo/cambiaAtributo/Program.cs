@@ -16,7 +16,8 @@ namespace cambiaAtributo
             string nombreVariable = ConfigurationManager.AppSettings["variableEntorno"].ToString();
             string rutaVariable = null;
             string valorWebService = null;
-            string rutaInstalación = null;
+            string rutaInstalacion = null;
+            string rutaNodo = null;
             Console.WriteLine(nombreVariable);
             Console.ReadLine();
             Xml xml = new Xml();
@@ -30,10 +31,20 @@ namespace cambiaAtributo
                 if (rutaVariable != null)
                 {
                     valorWebService = ConfigurationManager.AppSettings["nuevaRutaWebService"].ToString();
-                    rutaInstalación = ConfigurationManager.AppSettings["rutaInstalacion"].ToString();
+                    rutaInstalacion = ConfigurationManager.AppSettings["rutaInstalacion"].ToString();
+                    rutaNodo = ConfigurationManager.AppSettings["rutaNodoWebService"].ToString();
 
-                    xml.setRutaXml(rutaVariable+rutaInstalación);
+                    xml.setRutaXml(rutaVariable + rutaInstalacion);
+                    xml.setNombreAtributo(ConfigurationManager.AppSettings["nombreAtributo"].ToString());
                     xmlDoc.Load(xml.getRutaXml());
+
+                    
+                    XmlNode node = xmlDoc.SelectSingleNode(rutaNodo);
+                    node.Attributes[xml.getNombreAtributo()].Value = valorWebService;
+                    xmlDoc.Save(xml.getRutaXml());
+                    Console.ReadLine();
+   
+                    
 
 
                 }
