@@ -13,12 +13,24 @@ namespace cambiaAtributo
         static void Main(string[] args)
         {
 
-            string nombreVariable = ConfigurationManager.AppSettings["Url"].ToString();
-
+            string nombreVariable = ConfigurationManager.AppSettings["variableEntorno"].ToString();
+            Console.WriteLine(nombreVariable);
+            Console.ReadLine();
             Xml xml = new Xml();
 
+            try
+            {
+            }
+            catch (Exception e) {
+                Console.Clear();
+                Console.WriteLine("Error en la aplicación Contactese con casa central");
 
-            //if (xml.existeVariable
+            }
+
+
+
+
+          //if (xml.existeVariable
         }
     }
 }

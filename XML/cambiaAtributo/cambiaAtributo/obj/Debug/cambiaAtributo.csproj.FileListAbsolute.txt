@@ -1,2 +1,6 @@
 C:\Users\UAC\Google Drive\UAC\VISUAL STUDIO 2013\XML\cambiaAtributo\cambiaAtributo\bin\Debug\cambiaAtributo.exe.config
 C:\Users\UAC\Google Drive\UAC\VISUAL STUDIO 2013\XML\cambiaAtributo\cambiaAtributo\obj\Debug\cambiaAtributo.csprojResolveAssemblyReference.cache
+C:\Users\UAC\Google Drive\UAC\VISUAL STUDIO 2013\XML\cambiaAtributo\cambiaAtributo\bin\Debug\cambiaAtributo.exe
+C:\Users\UAC\Google Drive\UAC\VISUAL STUDIO 2013\XML\cambiaAtributo\cambiaAtributo\bin\Debug\cambiaAtributo.pdb
+C:\Users\UAC\Google Drive\UAC\VISUAL STUDIO 2013\XML\cambiaAtributo\cambiaAtributo\obj\Debug\cambiaAtributo.exe
+C:\Users\UAC\Google Drive\UAC\VISUAL STUDIO 2013\XML\cambiaAtributo\cambiaAtributo\obj\Debug\cambiaAtributo.pdb
