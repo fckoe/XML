@@ -8,7 +8,11 @@ namespace cambiaAtributo
 {
    public  class VariableEntorno
     {
+        
 
+        public VariableEntorno() {
+
+        }
 
         public Boolean existeVariable( string variableName) {
             if (Environment.GetEnvironmentVariable(variableName) == null)

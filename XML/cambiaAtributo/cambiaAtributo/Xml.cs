@@ -7,18 +7,20 @@ using cambiaAtributo;
 
 namespace cambiaAtributo 
 {
-    class Xml
+    class Xml : VariableEntorno
     {
 
         string rutaXml;
         string nombreAtributo;
-        VariableEntorno variableEntorno;
+        
 
         /*
          * CONSTRUCTOR 
          */
         public Xml()
         {
+            this.rutaXml = "";
+            this.nombreAtributo = "";
         }
 
 
@@ -32,9 +34,7 @@ namespace cambiaAtributo
             return this.nombreAtributo;
         }
 
-        public VariableEntorno getVariableEntorno() {
-            return this.variableEntorno;
-        }
+   
 
         public void setRutaXml(string rutaXml) {
             this.rutaXml = rutaXml;
@@ -44,15 +44,13 @@ namespace cambiaAtributo
             this.nombreAtributo = nombreAtributo;
         }
 
-        public void setVariableEntorno(VariableEntorno variableEntorno) {
-            this.variableEntorno = variableEntorno;
-        }
+    
 
 
         /*
          * FUNCTIONS AND METHODS
          */
-        public void 
+        
 
 
 
