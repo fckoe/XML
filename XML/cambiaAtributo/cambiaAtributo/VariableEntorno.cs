@@ -48,5 +48,18 @@ namespace cambiaAtributo
                 return true;
             }
         }
+
+        public string obtieneValorVariable( string variableName) {
+
+            if (existeVariable(variableName))
+            {
+                return Environment.GetEnvironmentVariable(variableName);
+            }
+            else {
+                return "Variable no esta definida";
+            }
+
+        }
+
     }
 }
