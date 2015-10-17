@@ -14,7 +14,7 @@ namespace cambiaAtributo
 
         }
 
-        public Boolean existeVariable( string variableName) {
+        private Boolean existeVariable( string variableName) {
             if (Environment.GetEnvironmentVariable(variableName) == null)
             {
                 return false;
@@ -31,7 +31,7 @@ namespace cambiaAtributo
                 return Environment.GetEnvironmentVariable(variableName);
             }
             else {
-                return "Variable no esta definida";
+                return null;
             }
 
         }
