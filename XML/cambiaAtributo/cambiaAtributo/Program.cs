@@ -49,6 +49,7 @@ namespace cambiaAtributo
                     Console.WriteLine("60. Guardar XML de configuración de impresora");
                     xmlDoc.Save(xml.getRutaXml());
                     Console.WriteLine("70. Fin. ## PRESIONE UNA TECLA PARA CERRAR LA APLICACION ##");
+                    Console.WriteLine(" hola mundo");
                     Console.ReadLine();
    
                     
@@ -57,13 +58,13 @@ namespace cambiaAtributo
                 }
                 else {
                     Console.WriteLine("15. Variable de entorno "+nombreVariable+" no tiene valor. Presione una tecla para salir.");
-                    Console.ReadLine()
+                    Console.ReadLine();
                 }
                 
             }
             catch (Exception e) {
                 Console.WriteLine(" 18. Error en la aplicación Contactese con casa central "+e.Message);
-                Console.ReadLine()
+                Console.ReadLine();
 
             }
 
